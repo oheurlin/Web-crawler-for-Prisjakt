@@ -12,10 +12,10 @@ class Mailer(object):
         self.main(attach_name)
 
     def main(self, attach_name):
-        gmail_user = 'oskar.crawler@gmail.com'
-        gmail_password = 'crawler2017'
+        gmail_user = 'XXXXXXXXXXXX.crawler@gmail.com'
+        gmail_password = 'XXXXXXXXXXXXXXXXXXX'
         body = 'Hello,\nSee the attached file'
-        to = ['o.heurlin@gmail.com', 'lina7906@gmail.com']
+        to = ['o.heurlin@gmail.com']
 
         msg = MIMEMultipart()
         msg['From'] = gmail_user
@@ -38,4 +38,3 @@ class Mailer(object):
         text = msg.as_string()
         server.sendmail(gmail_user, to, text)
         server.quit()
-        # print('Error, email not sent.')
