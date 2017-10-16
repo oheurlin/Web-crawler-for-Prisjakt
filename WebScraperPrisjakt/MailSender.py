@@ -15,7 +15,7 @@ class Mailer(object):
         gmail_user = 'XXXXXXXXXXXX.crawler@gmail.com'
         gmail_password = 'XXXXXXXXXXXXXXXXXXX'
         body = 'Hello,\nSee the attached file'
-        to = ['o.heurlin@gmail.com']
+        to = ['XXXXXXX@gmail.com']
 
         msg = MIMEMultipart()
         msg['From'] = gmail_user
